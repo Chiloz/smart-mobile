@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/frans_bauer"
+        app:srcCompat="@drawable/frans_bauer" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frans_bauer" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_green_dark">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/gender" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_green_dark">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/age" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_44" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_dark">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/bounty" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_60_000" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/details"
+            android:textColor="@android:color/background_light" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/frans_bauer_werd_geboren_als_frans_van_dooren_genoemd_naar_zijn_moeder_wies_van_dooren_omdat_zijn_ouders_toen_nog_niet_waren_getrouwd_zijn_vader_was_chris_bauer_1944_2015_frans_groeide_op_in_een_katholiek_gezin_en_bracht_zijn_jeugd_door_in_een_woonwagen_vanaf_jeugdige_leeftijd_was_bauer_vastbesloten_om_zanger_te_worden_zijn_grote_idolen_zijn_julio_iglesias_elvis_presley_en_koos_alberts_door_de_laatste_werd_hij_tijdens_optredens_soms_op_het_podium_gehaald_om_ik_verscheurde_je_foto_mee_te_zingen_bauer_brak_door_als_zanger_met_het_nummer_als_sterren_aan_de_hemel_staan_1996_en_zou_vervolgens_uitgroeien_tot_een_succesvol_artiest_het_vermogen_van_bauer_werd_door_het_blad_quote_editie_2012_geschat_op_31_miljoen_euro_hij_zou_daarmee_een_van_de_rijkste_nederlanders_onder_de_40_jaar_zijn_het_meeste_geld_verdiende_hij_met_zijn_reallifesoap_en_de_concerten_in_ahoy_in_2004_werd_bauer_onder_meer_vanwege_zijn_vele_liefdadigheidswerk_benoemd_tot_ridder_in_de_orde_van_oranje_nassau_op_9_mei_2008_huwde_bauer_met_zijn_vriendin_mariska_rossenberg_samen_hebben_ze_vier_zonen"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/report_button"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:height="10dp"
+            android:text="@string/report" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CSI_week_1</string>
+    <string name="frans_bauer">Frans Bauer</string>
+    <string name="name">Name:</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="age">Age:</string>
+    <string name="_44">44</string>
+    <string name="bounty">Bounty</string>
+    <string name="_60_000">€60.000</string>
+    <string name="frans_bauer_werd_geboren_als_frans_van_dooren_genoemd_naar_zijn_moeder_wies_van_dooren_omdat_zijn_ouders_toen_nog_niet_waren_getrouwd_zijn_vader_was_chris_bauer_1944_2015_frans_groeide_op_in_een_katholiek_gezin_en_bracht_zijn_jeugd_door_in_een_woonwagen_vanaf_jeugdige_leeftijd_was_bauer_vastbesloten_om_zanger_te_worden_zijn_grote_idolen_zijn_julio_iglesias_elvis_presley_en_koos_alberts_door_de_laatste_werd_hij_tijdens_optredens_soms_op_het_podium_gehaald_om_ik_verscheurde_je_foto_mee_te_zingen_bauer_brak_door_als_zanger_met_het_nummer_als_sterren_aan_de_hemel_staan_1996_en_zou_vervolgens_uitgroeien_tot_een_succesvol_artiest_het_vermogen_van_bauer_werd_door_het_blad_quote_editie_2012_geschat_op_31_miljoen_euro_hij_zou_daarmee_een_van_de_rijkste_nederlanders_onder_de_40_jaar_zijn_het_meeste_geld_verdiende_hij_met_zijn_reallifesoap_en_de_concerten_in_ahoy_in_2004_werd_bauer_onder_meer_vanwege_zijn_vele_liefdadigheidswerk_benoemd_tot_ridder_in_de_orde_van_oranje_nassau_op_9_mei_2008_huwde_bauer_met_zijn_vriendin_mariska_rossenberg_samen_hebben_ze_vier_zonen">Frans Bauer werd geboren als Frans van Dooren, genoemd naar zijn moeder Wies van Dooren, omdat zijn ouders toen nog niet waren getrouwd. Zijn vader was Chris Bauer (1944-2015). Frans groeide op in een katholiek gezin, en bracht zijn jeugd door in een woonwagen. Vanaf jeugdige leeftijd was Bauer vastbesloten om zanger te worden. Zijn grote idolen zijn Julio Iglesias, Elvis Presley en Koos Alberts. Door de laatste werd hij tijdens optredens soms op het podium gehaald om Ik verscheurde je foto mee te zingen. Bauer brak door als zanger met het nummer Als sterren aan de hemel staan (1996) en zou vervolgens uitgroeien tot een succesvol artiest. Het vermogen van Bauer werd door het blad Quote editie 2012 geschat op 31 miljoen euro. Hij zou daarmee een van de rijkste Nederlanders onder de 40 jaar zijn. Het meeste geld verdiende hij met zijn reallifesoap en de concerten in Ahoy. In 2004 werd Bauer, onder meer vanwege zijn vele liefdadigheidswerk, benoemd tot Ridder in de Orde van Oranje-Nassau. Op 9 mei 2008 huwde Bauer met zijn vriendin Mariska Rossenberg. Samen hebben ze vier zonen.</string>
+    <string name="details">Details:</string>
+    <string name="report">Report</string>
+    <string name="take_picture">Take picture</string>
+    <string name="gps_position">GPS position</string>
+    <string name="back">Back</string>
+    <string name="send">Send</string>
+    <string name="mugshot">Mugshot</string>
+    <string name="call_112">Call 112</string>
+</resources>
