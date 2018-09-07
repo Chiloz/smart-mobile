@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ManagerSMS</string>
+    <string name="stuur_sms">Stuur SMS</string>
+</resources>
