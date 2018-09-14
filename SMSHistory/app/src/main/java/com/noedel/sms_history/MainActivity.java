@@ -5,7 +5,9 @@ import android.content.Context;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,7 +15,6 @@ import android.widget.Toast;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -22,10 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
     TextView textFileInfo;
 
-    FileOutputStream outputStream;
     FileInputStream inputStream;
 
-    String filename = "smshistory.txt";
+    String filename = "smshistory3.txt";
     String fileContents = "";
 
     @Override
@@ -33,27 +33,45 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textFileInfo = findViewById(R.id.stringHistory);
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                                                                    Manifest.permission.READ_EXTERNAL_STORAGE,
+                                                                    Manifest.permission.SEND_SMS}, 1);
+
+
 
         reloadHistory();
+
+        Button buttonSend = (Button) findViewById(R.id.buttonSend);
+        buttonSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText numberText = (EditText) findViewById(R.id.idNumber);
+                String number = numberText.getText().toString();
+
+                EditText messageText = (EditText) findViewById(R.id.idMessage);
+                String message = messageText.getText().toString();
+
+                SmsManager smsManager = SmsManager.getDefault();
+                smsManager.sendTextMessage(number, null, message, null,null);
+                sendMessage();
+                reloadHistory();
+            }
+        });
     }
 
 
-    public void sendMessage(View view) {
+    public void sendMessage() {
 
 
         try {
-            EditText numberText = (EditText) findViewById(R.id.idNumber);
-            String history = numberText.getText().toString();
+            EditText numberText =  findViewById(R.id.idNumber);
+            EditText messageText =  findViewById(R.id.idMessage);
+            String numberHistory = numberText.getText().toString();
+            String textHistory = messageText.getText().toString();
 
-            fileContents += history + "\n";
+            fileContents += "To " + numberHistory + ": - '" + textHistory + "'" + "\n";
 
-//            outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
-//            outputStream.write(fileContents.getBytes());
-//            outputStream.close();
-
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("smshistory.txt", Context.MODE_PRIVATE));
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("smshistory3.txt", Context.MODE_PRIVATE));
             outputStreamWriter.write(fileContents);
             outputStreamWriter.close();
 
@@ -70,13 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void reloadHistory() {
         try {
-//            inputStream = openFileInput("smshistory.txt");
-//            inputStream.read(fileContents.getBytes());
-//
-//            textFileInfo.setText(fileContents);
-//
-//            inputStream.close();
-            inputStream = openFileInput("smshistory.txt");
+            inputStream = openFileInput("smshistory3.txt");
 
             if ( inputStream != null ) {
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);

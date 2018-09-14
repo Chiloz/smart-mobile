@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">SMS-History</string>
     <string name="number">Number:</string>
-    <string name="history">History</string>
+    <string name="history"><b>History</b></string>
     <string name="send">Send</string>
+    <string name="no_messages_sent">No messages sent...</string>
 </resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "905230166470",
+    "firebase_url": "https://fir-application-bd705.firebaseio.com",
+    "project_id": "fir-application-bd705",
+    "storage_bucket": "fir-application-bd705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905230166470:android:c14ae1ef35efabf0",
+        "android_client_info": {
+          "package_name": "com.noedel.firebaseapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905230166470-7e3bcjj37aa9d0d7v71bqan66ost4l0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.noedel.firebaseapplication",
+            "certificate_hash": "6fe661a0d530f0caae90621c6847d4537896c363"
+          }
+        },
+        {
+          "client_id": "905230166470-e69jf1e6o2p6qub5j16u3vipkqa0ahga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRg4JRl7LQz5uEJSIOU0hXWEpXsk8U2Fo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905230166470-e69jf1e6o2p6qub5j16u3vipkqa0ahga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
