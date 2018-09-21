@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FirebaseAuthentication</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="email">Email</string>
+    <string name="je_bent_ingelogd">Je bent ingelogd</string>
+    <string name="tap_on_camera_to_choose_profile_picture">Tap on camera to choose profile picture</string>
+    <string name="enter_display_name">Enter display name</string>
+    <string name="cameraicon">cameraIcon</string>
+    <string name="save">Save</string>
+    <string name="verified">Verified!</string>
+</resources>
