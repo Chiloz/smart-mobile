@@ -42,9 +42,8 @@ public class MainActivity extends AppCompatActivity {
             NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, "my_channel")
                     .setDefaults(NotificationCompat.DEFAULT_ALL)
                     .setSmallIcon(R.drawable.ic_stat_notification)
-                    .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_stat_notification))
-                    .setContentTitle(n + " notifications received!")
-                    .setContentText("This should be working")
+                    .setContentTitle("New location discovered!")
+                    .setContentText("You have discovered 'Maastrichter markt'")
                     .setPriority(NotificationCompat.PRIORITY_HIGH);
 
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
